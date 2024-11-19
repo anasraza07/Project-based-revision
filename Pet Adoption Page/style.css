@@ -1,0 +1,30 @@
+h2{
+    color: orange;
+}
+
+h1 span{
+    color: brown;
+}
+
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pets .card{
+    width: 400px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#pets .card img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+h4{
+    text-align: right;
+    color: cadetblue
+}
