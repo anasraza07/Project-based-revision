@@ -1,0 +1,107 @@
+JAVAScRIPT:
+- console uses REPL
+- REPL = read, evaluate, print, loop
+- variable is simply the name of a storage location
+- primitive types = sbse basic sbse core sbse fundamental types
+- primitive types = Number, Boolean, String, Undefined, Null, Bigint, Symbol
+- typeof = operator hai js main jo kisi bhi chz ki type batata hai
+- javascript variables ki type automatically detect krleta hai jbke other programming languages ko variables ki type bhi bataani prti hain even float and integers bhi different types hoti hain java jesi language main
+- numbers store krne ki bhi koi limit hoti hai memory main isiliye agr lamba decimal jese 0.99999999999999 dia to javascript isko round krke 1 main convert krdeti hai
+- modulo = remainder operator (%)
+- exponentiation = power operator (**)
+- NaN (Not A Number)= eik aesi global property hai jo hai to number but kisi valid number ko represent nhi krti jese (0 / 0 equal to NaN)
+- Invalid numbers ke sth jitne bhi operations perform karen answer invalid number main hi aayega jese: 
+- NaN + 1 = NaN
+- NaN - 1 = NaN
+- NaN * 1 = NaN
+- NaN * NaN = NaN
+- Operator precedence = precedence means priority, jo ye hai pehle brackets (), then power **, then multiply, divide, modulo *, /, % (equal priority but left to right) then add, subtract +, - (equal priority but left to right)
+- (2 + 1) * 3 = 9
+- 3 / 1 + 2 ** 2 = 7
+- 4 + 1 * 6 / 2 = 7
+- kisi expression main agr zaada power operators hote to right to left priority hoti hai solve krne ki
+- keyword = javascript main eik tarh ki dictionary hai jis main kch words reserve hote hain jinko ham keywords kehte hain aur wo variable naming main use nhi hosktay jese let, const, var etc
+- let, const, var = let use hota hai variables banaane ke liye jo naya keyword 2015 main introduce hua, const constant variables banaane ke liye use hota hai and var puraana keyword hai jo use hota tha wohi kaam ab let krta hai
+- assignment operator = jb left side code aur right side code ke beech assignment operator (=) aajaye tb hi right side ki value left side main jaakr assign hojayegi
+- binary operators = mtlb jisko 2 operands chahiye hote hain jese 
+(+, -, *, /, %, =), binary means two (2) 
+- unary operators = jinko eik hi operand chahiye jese (increment and decrement operators: ++ and --), unary means (1)  
+- pre-increment = change, then use => mtlb pehle change kro phr expression main use hojao
+- post-increment = use, then change => mtlb pehle expression main use hojao phr khudko change kro
+- same difference with post and pre decrement
+- identifier rules = variable name letters, numbers, dollarsign ($) aur underscore '_' contain kr skta hai jbke digits se shuru nhi hoskta, aur JS case sensitive langauge hai so small aur capital letters dono ko alag tarh dekhta hai, reserved words use nhi hosktay naming ke liye
+- way of writing identifiers = camelCase, snake_case and PascalCase but camelCase is JS naming convention, in python snake_case is used
+- JS is dynamic typed = we can change the type of the varible in JS like from number to boolean but this wont work in other programming languages like java or c++
+- Typescript = static typed hai jahan variable ke types change nhi kr skte ham, JS ka eik strict version hai, aur isko design microsoft ne kia hai
+- index = position in programming, in javascript 0 based indexing is followed
+- undefined = jb variable main koi value assigned naa ho tb wo undefined deta hai mtlb JS kehta hai 'mujhe nhi pata' ya phr jb ham koi galat value access krte hain tb bhi undefined milta hai
+- null = jb hamain represent krna ho kisi variable ke liye ke ye null hai tb ham khud se null assign krte hain aur hamain null milta hai, null is a keyword also
+- log means likhdo
+- JS file kahi aur likhi hui hai aur browser alag tarh kaam krta hai so JS file ko browser ke console se link krwaane ke liye console.log use hota hai
+- literals ka kaam hota hai JS ke andr expressions ko string main embed krne ka
+- template literals = ${}
+- Operators in JS = Arithmetic, Unary, Assignment (=, +=, ...), Comparison, Logical
+
+Comparison of non-numbers:
+- Unique value (unicode) = keyboard pe hr key ka kch unique code hota hai
+- generally ye yaad rkh skte hain ke a < b < c < d ...., A < B < C < D ..., 
+a > A, b > B; 'a' => 61, 'b' => 62 ..., 'A' => 41, 'B' => 42
+
+- 'else if' tb hi conditions check karega jb ooper waalay if ki condition false hojayegi wrna nhi chalega, wrna agr 2 if statements hongi to dono apni apni conditions check krke code execute karengay
+- else = tb chalega jb ooper waali saari conditions false hojayengi aur ye without condition just code ko execute krdeta hai
+- logical operators = used to combine expressions (&&, ||, !)
+- agr bht saare expressions ko compare krne ke liye bht saare logical operators hain to calculation left to right work krti hai
+- truthy & falsy = everything in JS is true or false (in boolean context), this doesn't mean their value itself is false or true, but they are treated as false or true if taken in boolean context
+- falsy values = false, 0, -0, On(BigInt value), ""(empty string), null, undefined, NaN
+- truthy values = everything else
+- switch statement = used when we have some fixed values that we need to compare, ye is tarh use hota hai ke jis case main condition true hogai to saaray switch on hojayengay aur code execute hota rahgea chaahay baad waale case ki conditions false hon tb bhi, isi liye 'break' keyword hr case main use krna zaroori hai jo code ko rok deta hai bs aagay nhi brhna ab, default case wohi else ki tarh kaam krta hai
+- console.error = for error msg in console
+- console.warn = for warning msg in console
+
+
+
+- eik acha programmer logic building se hi banta hai aur kisi bhi program main logic step by step build hoti hai, small small parts ko solve krne se
+
+
+
+
+
+
+
+- Scope = determines the accessibility of variables, objects and functions from different parts of the code, scope hamain ye bataata hai ko konse variables ko kahan pe use kia jaskta hai aur kahan use nhi kia ja skta
+- function scope = variables defined inside a function are not accessible (visble) from outside the function, function andr jo variables define hote hain wo andr hi access hoskte hain bahar nhi
+-global scope = globally jo variables define hote hain wo kahi bhi access kiye jaaskte hain
+- function scope aur global scope jb function ke andr fight krte hain = to function scope jeet jaata hai wrna function ke bahar global scope jeet jaata hai
+- block = variables declared inside a {} block cannot be accessed from outside the block, curly braces ke andr jo variables define hote hain wo iske bahar access nhi hoskte, block scope let and const ke sth hi work krta hai var ke sth nhi, block scope 2015 version main aaya let aur const keywords ke sth
+- lexical scope = a variable defined outside a function can be accessed inside another function defined after the variable declaration. The opposite is not true, lexical scope nested functions main bnta hai jb parent function main define kiye gaye variables child function ke andr access hojaate hain lekin child function ke variables ko parent main access nhi kia jaaskta, naa hi inner function ko outer ke bahar call kr skte hain bcuz us inner function ka bhi function scope hoga 
+- call stack = call mtlb function ki calls, stack programming main eik data structure ko kehte hain jo LIFO (last in first out) ki tarh kaam krta hai, call stack hamare function ki calls ko track krne ke liye use hota hai jo pehli call hota hai wo stack main neeche para hota hai and jo baad main call hota hai wo ooper aata rehta hai jese jese call hokr function khatam hojaata hai wese stack se remove bhi hojaata hai
+- jo function-calls stack ke andr aati rehti hain = unko programming main stack frame kehte hain
+- function scope variables = jo hote hain wo stack frame ke andr hi create hote hain aur as you know function jese hi complete hota hai wo waali stack frame remove hojaati hai call stack se so us frame ke andr paray hue variables bhi khatam hojaate hain that's why wo bahar access nhi hosktay 
+- breakpoints = debugging krne main use hote hain, ham console khol kr sources ke section main jaakr breakpoints lagaaskte hain by clicking line number aur phr neeche diye gaye buttons se execution control kr skte hain aur sth sth call stack bhi hamain dikhta hai, ye sb complex code main bht useful hota hai  
+- JS is Single Threaded = iska mtlb ye hai ke javascript eik waqt main eik hi kaam krti hai jbke kch programming language multi threaded bhi hoti hain, ab problem tb aati hai jb API se kch data mangwaana ho ya database main data save krna ho kch time lag skta hai aur JavaScript yahan pr wait karegi in sb kaamo ka to baaqi aur features ruk jayenge so yahan aate hain callbacks jisko kisi chz ke execution complete hone pe run kr rahe hote hain ham
+- agr JS single threaded hai to phr JS kch code ooper neechay aur setTimeout ke liye kese wait bhi krleta hai aur baaqi code run bhi krdeta hai ??? = ye is tarh hota hai ke JS setTimeout jesi cheezen (jis main delay hota hai) browser ko de deta hai aur time complete hote hi browser us code ko JS ke callStack ko return krdeta hai aur phr callstack execute krdeta hai so is tarh Javascript ko wait krne ki fikr nhi hoti wo line by line hi code ko run krti hai is tarh ke nature ko asynchronous kehte hain aur line by line chalne ko synchronous nature kehte hain so Javascript dono tarh kaam krti hai
+- callback hell = javascript main asynchronously code likhne ke liye callbacks use hoskte hain but unse callback hell create hojaata hai jis se bachne ke liye ham phr promises and async await use krte hain
+- promises = promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value, promise use krne ke liye jis function ko ham asynchronously use kr rahe hote hain usi ke andr promise object ham return krti hain jo resolve and reject as an argument leta hai, resolve ke andr jo value hogi wo promise ke result bhi milegi agr promise fullfill hua, promise main 3 states bhi hoti hai - pending, fullfill, reject
+- .then and .catch = promise jesa ke object hai aur obj ke kch methods hote hain isi tarh promise obj ke bhi methods hain jin main se .then and .catch bhi hai success ya fulfill hone pr kch kaam krwana ho to wo .then ke callback ke andr aayega and isi tarh error ho to wo .catch ke andr 
+-  promsise chaining  = is main ham second promise ke .then ke andr hi return krwaate hain jis se line by line .then lagte jaate hain aur koi hi error aaaye so wo end waalay catch ke andr jaata hai
+- result and error = .then and .catch main argument bhi milta jo hamesha promise ke result se match krta hai wohi uski value hoti hai
+- async keyword = normal function ko asynchronously work krwane ke liye just async ka keyword add krna hota hai is se wo automatically promise return krta hai agr sahi code work kr gaya to fulfill wrna rejected, aur function main jo value ham return krte hain wo promise ke result main mil jaati hai hamain yaani .then aur .catch ke argument main bhi ye values milti hain
+- throw = is se ham khud se error throw kr skte hain kisi logic ke basis pr
+- await keyword = pauses the execution of its surrounding async function until the promise is settled (resolved or rejected), await keyword use krne se wo aas paas ki saari calls ko rokdeta hai jb tk current promise chal rahi hai wo settle nhi hojaati (mtlb pending se hat nhi jaati tb tk pause rahega), is keyword ko sirf async ke andr hi call kr skte hain, await async function ke andar ka execution stop krdeta hai, jab tak promise settle nahi hota function ki baaki lines execute nahi hoti.
+- Methods:   Kaam Kya Karta Hai?   Kab Use Karte Hain?
+- resolve = Promise ko fulfilled banata hai, Jab async kaam successfully complete ho jaye tb use krte hain
+- reject = Promise ko rejected banata hai, Jab async kaam fail ho jaye ya error ho tb use krte hain
+- .then() = Resolve ke call hone par callback execute karta hai, Jab promise ka success result handle karna ho (mtlb koi react bhejna ho jese 'kaam hogaya!') tb use krte hain
+- catch() = Reject ke call hone par callback execute karta hai, Jab promise ka error handle karna ho tb use krte hain
+- await = Promise ka result wait karke return karta hai, Jab synchronous ki tarh dikhne wala code likhna ho tb use krte hain
+- try & catch = ab kch kaam hote hain jo async await calls ke baad bhi krne ke hote hi hain but agr error aajaye kisi async task main phr wo kaam bhi ruk jaate hain jo promise pr dependent nhi hotay, isi liye us code ko jis main error ka shak ho try block ke andr daalte hain aur error ko jis tarh use krna hai wo catch ke andr likhte hain is se baaqi ka code bhi run hoga hi hoga
+- API = application programming interface hota hai jo software ke beech interacttion krne main kaam aata hai but ham as a web developer aksar 'web apis' hi use karengay jo eik tarh se waiter ki tarh kaam krti hain like order kro wo kitchen yaani server pr jayenge and khana yaani response lekr aayengay, ham backend seekh kr khud ki apis bhi banaaskte hain 
+- JSON = api hr baar eik tarh ka response deti hai jo data hota hai aur wo data aksar JSON format main hota hai jo object ki tarh dikhta hai and wo computer ke smjhne ke liye hota hai but data thora ho to hamain bhi easily smjh aata hai
+- api keys and paid api = twitter api, instagram api is tarh ki apis keys access payment credentials sb maangti hain aur inko use krke ham in apps main bht kch automatically kr skte hain
+- JSON = javascript object notation, ye eik format hai data ka jo api ki taraf se hamain as a response milta hai, pehle xml form main milta tha jo html format se thora similar tha aur ab ye json javascript se thora similar hai, infact ab bhi kch thori si apis xml form main milti hain, JSON phr bhi javascript object se  thora different hai jese keys ke naam strings main hote hain aur JSON undefined value nhi leta error dedeta hai is tarh ke kch difference hain
+
+
+- strings are immutable in JS = no changes can be made to strings, whenever we do try to make a change, a new string is created and old one remains same, mtlb iska ye hua ke immutable means no change yaani javascript ki strings main sirf methods lagaane se koi change nhi aata jb tk ham uski original value main jaakr kch change naa karen
+- str.slice(-num) = str.slice(str.length - num)
+- array = linear collection of things
+- arrays are mutable = arrays ke kisi index ko change krne se original array bhi change hojaati hai chaahe kitna hi bara index ki value deni ho baaqi ke index empty save hojayenge aur uski value undefined milegi aur us index pr value save hojayegi aur length bhi brh jayegi
