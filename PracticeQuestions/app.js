@@ -35,7 +35,7 @@
 // // JS (Part 2) Practice Questions
 // // Q1:
 // const num = 20;
-// if (num % 10 === 0) {
+// if (num % 10 == 0) {
 //     console.log('good')
 // } else {
 //     console.log('bad')
@@ -62,7 +62,7 @@
 //         console.log('October, Nov, Dec');
 //         break;
 //     default:
-//         console.log('Invalid')
+//         console.log('not a quarter')
 // }
 
 // // Q4:

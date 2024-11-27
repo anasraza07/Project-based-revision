@@ -16,45 +16,165 @@
 </head>
 
 <body>
-    <div id="main">
-        <div id="sidebar">
-            <div id="nav">
-                <div class="nav-options">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
+    <div id="container">
+        <div id="main">
+            <div id="sidebar">
+                <div id="nav">
+                    <div class="nav-options">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="nav-options">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
                 </div>
-                <div class="nav-options">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
+                <div id="library">
+                    <div id="options">
+                        <div class="library-option nav-options">
+                            <img src="./assets/library_icon.png" alt="">
+                            <a href="">Your Library</a>
+                        </div>
+                        <div id="icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div id="library-boxes">
+                        <div class="library-box">
+                            <p class="para-one">Create your first playlist</p>
+                            <p class="para-two">It's easy, we'll help you</p>
+                            <button class="badge">Create playlist</button>
+                        </div>
+                        <div class="library-box">
+                            <p class="para-one">Let's find some podcasts to follow</p>
+                            <p class="para-two">We'll keep you updated on new episodes</p>
+                            <button class="badge">Browse podcasts</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="library">
-                <div id="options">
-                    <div class="library-option nav-options">
-                        <img src="./assets/library_icon.png" alt="">
-                        <a href="">Your Library</a>
+            <div id="main-content">
+                <div id="sticky-navbar">
+                    <div>
+                        <img class="sticky-navbar-icons" src="./assets/backward_icon.png" alt="">
+                        <img class="sticky-navbar-icons hide" src="./assets/forward_icon.png" alt="">
                     </div>
-                    <div id="icons">
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div id="library-boxes">
-                    <div class="library-box">
-                        <p class="para-one">Create your first playlist</p>
-                        <p class="para-two">It's easy, we'll help you</p>
-                        <button class="badge">Create playlist</button>
-                    </div>
-                    <div class="library-box">
-                        <p class="para-one">Let's find some podcasts to follow</p>
-                        <p class="para-two">We'll keep you updated on new episodes</p>
-                        <button class="badge">Browse podcasts</button>
+                    <div>
+                        <button class="badge sticky-navbar-item hide">Explore Premium</button>
+                        <button class="badge sticky-navbar-item install-app-item">
+                            <i class="fa-regular fa-circle-down" id="install-app-icon"></i>
+                            Install App</button>
+                        <i class="sticky-navbar-item fa-regular fa-user"></i>
                     </div>
                 </div>
+                <!-- recently -->
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                </div>
+                <!-- trending -->
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                </div>
+                <!-- featured -->
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" alt="" class="card-image">
+                        <div class="card-title">Top 50 - Global</div>
+                        <div class="card-info">Your daily updates of the most played...</div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div id="footer"></div>
             </div>
         </div>
-        <div id="main-content">main content</div>
-        <div id="music-player">music player</div>   
+        <!-- <div id="music-player">
+            <div id="album">
+                <img id="album-image" src="./assets/album_picture.jpeg" alt="">
+                <div>
+                    <p>Daylight</p>
+                    <p>David Kushner</p>
+                </div>
+                <img id="album-icon" src="./assets/album_icon1.png" alt="">
+            </div>
+            <div id="player">
+                <div id="player-controls">
+                    <img class="player-control-icon" src="./assets/player_icon1.png" alt="">
+                    <img class="player-control-icon" src="./assets/player_icon2.png" alt="">
+                    <img class="" id="play-music" src="./assets/play_musicbar.png" alt="">
+                    <img class="player-control-icon" src="./assets/player_icon4.png" alt="">
+                    <img class="player-control-icon" src="./assets/player_icon5.png" alt="">
+                </div>
+                <div id="playback-bar">
+                    <div id="current">0:00</div>
+                    <input type="range" name="" id="progress-bar" min="0" max="100" step="1">
+                    <div id="total">3:33</div>
+                </div>
+            </div>
+            <div id="controls">
+                <img src="./assets/controls_icon1.png" alt="">
+                <img src="./assets/controls_icon2.png" alt="">
+                <img class="opacity" src="./assets/controls_icon3.png" alt="">
+                <img class="opacity" src="./assets/controls_icon4.png" alt="">
+                <div id="volume-control">
+                    <img src="./assets/controls_icon5.png" alt="">
+                    <input type="range" name="" id="">
+                </div>
+                <img src="./assets/album_icon2.png" alt="">
+                <i class="fa-solid fa-up-right-and-down-left-from-center opacity"></i>
+            </div>
+        </div> -->
     </div>
 </body>
 
